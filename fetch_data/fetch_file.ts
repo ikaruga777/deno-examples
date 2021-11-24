@@ -7,3 +7,13 @@ if (fileResponse.body) {
   const writableStream = writableStreamFromWriter(file);
   await fileResponse.body.pipeTo(writableStream);
 }
+
+import { readableStreamFromReader } from "https://deno.land/std@0.115.1/streams/mod.ts";
+
+const file = await Deno.open("./logo.svg", { read: true});
+const readableStream = readableStreamFromReader(file);
+
+await fetch("https://example.com/", {
+  method: "POST",
+  body: readableStream
+});
