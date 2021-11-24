@@ -19,7 +19,7 @@ const textData = await textResponse.text();
 console.log(textData);
 
 try {
-  await fetch("https://does.not.exist/")
+  await fetch("https://does.not.exist/");
 } catch (e) {
   console.log(e);
 }
