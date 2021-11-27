@@ -2,7 +2,6 @@
 // error: Module evaluation is still pending but there are no pending ops or dynamic imports. This situation is often caused by unresolved promise.
 // ??
 
-
 import { signal } from "https://deno.land/std@0.116.0/signal/mod.ts";
 
 const sig = signal("SIGUSR1", "SIGINT");

@@ -5,4 +5,4 @@ Deno.addSignalListener("SIGINT", () => {
   Deno.exit();
 });
 
-setTimeout(() => {}, 5000)
+setTimeout(() => {}, 5000);

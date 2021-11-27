@@ -1,4 +1,4 @@
-import { outputB } from './module_b.ts';
+import { outputB } from "./module_b.ts";
 
 function outputA() {
   console.log("Module A's import.meta.url", import.meta.url);
